@@ -7,4 +7,6 @@
 <img src="./img/4.png" alt="">
 <img src="./img/5.png" alt="">
 
-> Feito com 💜 por Yasmin Minho 
+# Acesse em: 
+> https://yasminminho.github.io/seance-tarot/
+
