@@ -1,0 +1,299 @@
+:root{
+    --primary: #550196;
+    --secondary: #00010D;
+    --tertiary: #8C8B88;
+    --text-color: #E8CB6E;
+    --text-secondary: #F2F2F0;
+}
+
+@font-face{
+    font-family: lasignora;
+    src: url("../fonte/lasignora.otf");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+/* Event Form */
+
+#event-description{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/baralho.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 1rem;
+    align-items: center;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+#disclaimer h2,
+#disclaimer .event-date{
+    color: var(--text-color);
+    font-family: lasignora;
+}
+
+#disclaimer h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event{
+    font-size:  2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#subscription-form{
+    background-color: var(--text-color);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--secondary);
+    margin-bottom: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label{
+    color: var(--secondary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select{
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+/* benefits section*/
+
+#key-benefits h2{
+    background-color: var(--primary);
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1em;
+    font-family: lasignora;
+    color: #E8CB6E;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: var(--text-secondary);
+}
+
+.benefit{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary);
+}
+
+.benefit .benefit-img{
+    width: 150px;
+    height: 150px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+}
+
+#benefit-1{
+    background-image: url("../img/carta-de-taro.png");
+}
+
+#benefit-2{
+    background-image: url("../img/bola-de-cristal.png");
+}
+
+#benefit-3{
+    background-image: url("../img/lua-crescente.png");
+}
+
+/* event location */
+#location{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/cristais.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-secondary);
+    padding-bottom: 3em;
+}
+
+#address, #about-location{
+    max-width: 40%;
+}
+
+#address{
+    display: flex;
+}
+
+#address i{
+    color: var(--text-color);
+    font-size: 6em;
+    margin-right: 0.2em;
+}
+
+#address-details{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+#about-location h3{
+    color: var(--text-color);
+    font-size: 3em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    font-family: lasignora;
+}
+
+#about-location p{
+    line-height: 1.5em;
+}
+
+/*event details*/
+#details{
+    width: 80%;
+    margin: 2em auto;
+}
+
+.detail{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 3em;
+}
+
+.detail img{
+    width: 600px;
+}
+
+.detail h3{
+    font-size: 3em;
+    font-family: lasignora;
+    padding: .5em;
+}
+
+.detail p{
+    font-size: 1.5em;
+}
+
+.detail-description{
+    width: 100%;
+    padding-left: 2em;
+}
+
+/* call to action section*/
+#cta{
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/baralho.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    color: var(--text-color);
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-family: lasignora;
+}
+
+#cta .btn{
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/*footer*/
+#footer{
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3{
+    font-family: lasignora;
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span{
+    font-weight: bold;
+}
+
+#fim{
+    background-color: var(--primary);
+    height: 30px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 7px;
+}
